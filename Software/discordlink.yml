@@ -1,0 +1,27 @@
+#
+#  _____  _                       _   _      _       _       _____      _   _   _
+# |  __ \(_)                     | | | |    (_)     | |     / ____|    | | | | (_)
+# | |  | |_ ___  ___ ___  _ __ __| | | |     _ _ __ | | __ | (___   ___| |_| |_ _ _ __   __ _ ___
+# | |  | | / __|/ __/ _ \| '__/ _` | | |    | | '_ \| |/ /  \___ \ / _ \ __| __| | '_ \ / _` / __|
+# | |__| | \__ \ (_| (_) | | | (_| | | |____| | | | |   <   ____) |  __/ |_| |_| | | | | (_| \__ \
+# |_____/|_|___/\___\___/|_|  \__,_| |______|_|_| |_|_|\_\ |_____/ \___|\__|\__|_|_| |_|\__, |___/
+#                                                                                        __/ |
+# Special thanks to the Discord.py server for your help uwu                             |___/
+
+
+#Bot Setup
+#Need help? http://hammy.xyz/go/mcdiscordhelp
+bot-setup:
+  bot-id: 00000000000
+  bot-token: 00000000000
+
+#Cosmetic Settings
+cosmetic-settings:
+  #Playing Mode: http://hammy.xyz/mcdiscordhelp STREAMING NOT SUPPORTED
+  playing-mode: 1
+  playing-message: Minecraft on bedrock.teammage.org | {playersOnline}/{playersMax}
+  #Chatting Channel Topic
+  default-channel-topic: bedrock.teammage.org | {playersOnline}/{playersMax}
+  #console channel Topic
+  log-channel-topic: TPS: {tps}
+  

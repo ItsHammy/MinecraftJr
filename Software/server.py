@@ -9,8 +9,22 @@ firstStart = 'false'
 gameVersion = '1.12.0'
 playersOnline = '34'
 playersMax = '150'
+tps = '19.97'
 
 #I guess this is the actual display script that users see
+def statusBox():
+    print("**************************************************")
+    print("**************** Server Status: ******************")
+    print("***                                            ")
+    print("***                                            ")
+    print("*** Online: {}/{}       ".format(playersOnline, playersMax))
+    print("*** Game Version: {}                ".format(gameVersion))
+    print("*** TPS: {} (Feels like 20!)                   ".format(tps))
+    print("***                                            ")
+    print("*** Found an Error? http://hammy.xyz/discord   ")
+    print("***                                            ")
+    print("**************************************************")
+
 def awaitcmd():
     cmd = input(">")
     #answercmd
@@ -22,6 +36,7 @@ def awaitcmd():
         print("**                                          **")
         print("**   CMD    -          USAGE                **")
         print("**                                          **")
+        print("** gc       - Server Information            **")
         print("** gm       - Change Gamemode               **")
         print("** help     - Shows this page               **")
         print("** op       - Give a player Operator Status **")
@@ -33,6 +48,9 @@ def awaitcmd():
     elif cmd == 'plugins':
         print("Plugins (0): ")
         print("Plugin missing or not working? Check it's dependinces and that it's on the right version ({})".format(softwareVersion))
+        awaitcmd()
+    elif cmd == 'gc':
+        statusBox()
         awaitcmd()
     elif cmd == 'stop':
         #Stop
@@ -144,7 +162,7 @@ def startup():
         #Setup
         print("")
         print("First, an easy one, please enter your XboxLive username")
-        topadmin = input("")
+        topadmin = input(">")
 
         print("Great! Welcome {} to your Minecraft Server!".format(topadmin))
         print("{} is now considered the topadmin".format(topadmin))
@@ -161,25 +179,15 @@ def startup():
         print("First off, lets talk the basics, I'll ask a question and you'll answer it!")
 
         print("What would you like to call the server? (Max 32 Characters)")
-        serverName = input("")
+        serverName = input(">")
 
         print("Very very good, let's continue setting up {}".format(serverName))
 
         print("What do you want the default Gamemode to be? (CREATIVE, SURVIVAL, ADVENTURE)")
-        defaultGamemode = input("")
-
-        print("Great! Now what local IP do you want the server to run on?")
-        print("Note: if you don't know, just click enter and I'll try localhost")
-        localIp = input("")
-        #adjust localIp
-        if localIp == '':
-            localIp = 'localhost'
-        else:
-            print("Changing localIp from localhost to {}".format(localIp))
-
+        gamemode = input(">")
         print("Cool, okay, so, uhhhh, oh right, server port (default is 19132)")
         print("Enter Server Port (leave blank for default)")
-        port = input("")
+        port = input(">")
         #adjust serverport
         if port == '':
             port = '19132'
@@ -201,20 +209,21 @@ def startup():
         print("")
         print("y - yes please, announce them advancements")
         print("n - no, keep it to yourself")
-        announceAdvancements = input("")
+        announceAdvancements = input(">")
         print("")
 
         print("Auto Updates")
         print("Do you wish to always update to the latest game version when available (I 100% recommend this as most players update within the first 2 days)")
+        autoUpdate = input(">")
 
         print("Do you wish to have a whitelist on initial startup? This means only {} can join on first start. This allows for more in game startup. More info: http://hammy.xyz/go/mcwhitelist".format(topadmin))
-        whitelist = input("")
+        whitelist = input(">")
 
         print("Do you wish to allow non-XboxLive users? I recommend answering n to this because it makes for easier configuration.")
-        nonxbl = input("")
+        nonxbl = input(">")
 
         print("Do you wish to use the default op system. (I REALLY suggest you answer n and let MinecraftJr handle the perms and not Minecraft)")
-        legacyPerms = input("")
+        legacyPerms = input(">")
 
         print("Okay so now I believe we have world generation settings. One second as I reload the script")
 
@@ -223,23 +232,23 @@ def startup():
         print("INITIAL WORLD GENERATION:")
         print("")
         print("World Type? | Superflat, Normal, Old")
-        worldType = input("")
+        worldType = input(">")
 
         print("Generation Seed? | Put 0 for random :)")
-        seed = input("")
+        seed = input(">")
 
         print("Huh that easy? Okay then lets move on, next on this list is the fun stuff!!!")
 
         print("Let's bring her life!")
         print("Server 'Message of the Day'(MOTD)")
         print("We support colour codes/formatting codes using the & symbol! http://hammy.xyz/go/mcformatting")
-        motd = input("")
+        motd = input(">")
         print("")
 
         print("Finally, do you want to have a custom 'server software' name?")
         print("Some server lists and status checkers display this, so i suggest something like 'Server.net v1.12' however use this however")
         print("Max 24 Characters, Leave blank for 'MinecraftJr'")
-        serverSoftware = input("")
+        serverSoftware = input(">")
 
         print("Okay we're done")
         print("Well you are")
@@ -251,10 +260,10 @@ def startup():
         print("***********************************")
         print("Please enter the maximum amount of ram in MB (MUST BE ABOVE 500!!!)")
         print("For recommended server specs, see http://hammy.xyz/go/mcspecs")
-        mxm = input("")
+        mxm = input(">")
 
         print("Finally, I ask you enter an override password, this will give you access to commands like FULLRESET, only share with your most trusted!!!")
-        overridePassword = input("")
+        overridePassword = input(">")
         print("Encrypting, Please wait")
 
         print("")

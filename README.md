@@ -34,7 +34,7 @@
   - Built-in /login system for offline mode
   - So much more customisation (think EssentialsX but bedrock and built-in)
   - Discord Bot Support (Thanks to my friends in the Discord.py discord server for making that happen uwu)
-
+  - Completely change Python files so that setup etc is in a separate script
 
 
 As much as I love making and maintaining this, it does take a lot of time, please consider donating to me a couple of dollars at http://buymeacoffee.com/daddyhammy
