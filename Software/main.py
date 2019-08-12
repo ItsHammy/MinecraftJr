@@ -8,6 +8,7 @@ gameVersion = '1.12.0'
 playersOnline = '34'
 playersMax = '150'
 tps = '19.97'
+usePerms = 'true'
 
 # Working Variables
 

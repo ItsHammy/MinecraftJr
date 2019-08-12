@@ -28,7 +28,7 @@ def startup():
     print("***        Version: 0.0.1         ***")
     print("*************************************")
     print("")
-
+    sleep(5)
     #Check Update
     if updateAvailable == 'true':
         print("*************************************************")
@@ -37,18 +37,21 @@ def startup():
         print("**   THIS WILL NOT AFFECT YOUR GAME VERSION    **")
         print("**        http://hammy.xyz/go/mcupdate         **")
         print("*************************************************")
+        sleep(2)
         print("*************************************************")
         print("**           WARN: Update Available            **")
         print("** For Security Reasons I recommend you update **")
         print("**   THIS WILL NOT AFFECT YOUR GAME VERSION    **")
         print("**        http://hammy.xyz/go/mcupdate         **")
         print("*************************************************")
+        sleep(2)
         print("*************************************************")
         print("**           WARN: Update Available            **")
         print("** For Security Reasons I recommend you update **")
         print("**   THIS WILL NOT AFFECT YOUR GAME VERSION    **")
         print("**        http://hammy.xyz/go/mcupdate         **")
         print("*************************************************")
+        sleep(2)
         print("")
     else:
         print("Server Version up to date!")
@@ -57,11 +60,14 @@ def startup():
 
     #Check First Start, if true, run setup
     if firstStart == 'true':
+        sleep(3)
         import setup
         print("Done!")
+        sleep(1)
         awaitcmd()
 
     else:
+        sleep(3)
         print("Starting the Server!")
         awaitcmd()
 
