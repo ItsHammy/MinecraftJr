@@ -1,15 +1,16 @@
-# Importy thingys
+#Import Everything
 from time import sleep, time
 
 # Testing Variables (There's a lot uwu)
-softwareVersion = '0.0.1'
+softwareVersion = '0.0.2'
 updateAvailable = 'false'
-updateVersion = '0.0.2'
+updateVersion = '0.0.3'
 firstStart = 'false'
 gameVersion = '1.12.0'
 playersOnline = '34'
 playersMax = '150'
 tps = '19.97'
+usePerms = 'true'
 
 # Working Variables
 
@@ -25,7 +26,7 @@ def startup():
     print("***  http://hammy.xyz/minecraft   ***")
     print("***      100% Open Source!        ***")
     print("*************************************")
-    print("***        Version: 0.0.1         ***")
+    print("***        Version: 0.0.2         ***")
     print("*************************************")
     print("")
     sleep(5)

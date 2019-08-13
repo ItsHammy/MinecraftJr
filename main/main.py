@@ -1,8 +1,10 @@
+#Import Everything
+from time import sleep, time
 
 # Testing Variables (There's a lot uwu)
-softwareVersion = '0.0.1'
+softwareVersion = '0.0.2'
 updateAvailable = 'false'
-updateVersion = '0.0.2'
+updateVersion = '0.0.3'
 firstStart = 'false'
 gameVersion = '1.12.0'
 playersOnline = '34'
@@ -28,7 +30,7 @@ def statusBox():
     print("**************************************************")
 
 def awaitcmd():
-    cmd = input(">").lower()
+    cmd = input(">".lower())
     #answercmd
     if cmd == 'help':
         #help

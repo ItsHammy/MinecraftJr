@@ -8,7 +8,7 @@
 #                                                                                        __/ |
 # Special thanks to the Discord.py server for your help uwu                             |___/
 
-
+enabled: false
 #Bot Setup
 #Need help? http://hammy.xyz/go/mcdiscordhelp
 bot-setup:
@@ -24,4 +24,12 @@ cosmetic-settings:
   default-channel-topic: bedrock.teammage.org | {playersOnline}/{playersMax}
   #console channel Topic
   log-channel-topic: TPS: {tps}
+
+
+#Channel settings
+channels:
+  #Main bot interaction channel
+  default: 00000000000
+  #Console Channel
+  log: 00000000000
   

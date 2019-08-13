@@ -1,0 +1,45 @@
+#
+#  __  __  _____     _ _____     _____ _           _
+# |  \/  |/ ____|   | |  __ \   / ____| |         | |
+# | \  / | |        | | |__) | | |    | |__   __ _| |_
+# | |\/| | |    _   | |  _  /  | |    | '_ \ / _` | __|
+# | |  | | |___| |__| | | \ \  | |____| | | | (_| | |_
+# |_|  |_|\_____\____/|_|  \_\  \_____|_| |_|\__,_|\__|
+#
+# TO USE THIS, PLEASE MAKE SURE mcjr-chat IS SET TO true IN options.yml
+# TO USE THIS, PLEASE MAKE SURE mcjr-chat IS SET TO true IN options.yml
+# TO USE THIS, PLEASE MAKE SURE mcjr-chat IS SET TO true IN options.yml
+# TO USE THIS, PLEASE MAKE SURE mcjr-chat IS SET TO true IN options.yml
+
+#Placeholders: %player%, %unique%, %online%, %rank%
+
+#Messages
+messages:
+  first-join: '&bWelcome %player%, &bto the server! Member Number: &d%Unique!%'
+  join-msg: '&7[&a+&7] &b%player%'
+  leave-msg: '&7[&4-&7] &b%player%'
+  #MOTD is in MOTD.txt
+  motd-on-join: true
+
+#Chat Format:
+format: %rank% %player% &8>>> &7[MESSAGE]
+
+
+
+#AutoMessage Settings
+automessage:
+  enabled: true
+  #If true, players must either be opped or have mcjr.automessage.see
+  requireperm: true
+  #Interval in seconds
+  interval: 90
+  #Messages in order
+  messages:
+    - 'Hi, welcome to my server'
+    - 'Running MinecraftJr by hammy.xyz/minecraft'
+    - 'Hi, welcome to my server'
+    - 'Running MinecraftJr by hammy.xyz/minecraft'
+    - 'Hi, welcome to my server'
+    - 'Running MinecraftJr by hammy.xyz/minecraft'
+    - '&bOh yeah! \n &d&lFormatting works too'
+    - 'uwu'

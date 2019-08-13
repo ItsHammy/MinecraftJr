@@ -1,0 +1,30 @@
+#
+#   ____        _   _                 _ _ _
+#  / __ \      | | (_)               | | | |
+# | |  | |_ __ | |_ _  ___  _ __  ___| | | |
+# | |  | | '_ \| __| |/ _ \| '_ \/ __| | | |
+# | |__| | |_) | |_| | (_) | | | \__ \_|_|_|
+#  \____/| .__/ \__|_|\___/|_| |_|___(_|_|_)
+#        | |
+#        |_|
+
+# Here are the various options for MinecraftJr
+
+# Important Settings (PLEASE RESTART WHEN YOU ADJUST THESE, NOT RELOAD)
+controlling:
+  # Do you wish to change the name of the server software? If so change it here | DO NOT LEAVE BLANK
+  sftwrename: 'MinecraftJr by Hammy.xyz'
+  # Do you wish to use our permissions system? Some plugins require this and we recommend it, for more info see http://hammy.xyz/go/mcperms
+  mcjr-perms: true
+  # Do you wish for OP's to get the '*' permission? Some plugins may not respect the OP system so we suggest keeping this true! [REQUIRES mcjr-perms to be true]
+  ops-get-all: true
+  # Do you wish for OP's to have /op? If false, only console can OP
+  opping-op-ops: false
+  # Do you wish to use the MCJR chat system? Please disable if you use your own Chat Manager. [chat.yml]
+  mcjr-chat: true
+  # Server Whitelist Message | %player% displays their name, colour codes currently not supported
+  whitelist-msg: 'Sorry %player%, This server is in maintenance mode! [hammy.xyz/minecraft]'
+  # Kick non-whitelisted players when whitelist is enabled (do this any time with /wlenforce)
+  wlenforce: true
+  # Set this to true to disable all Mob spawning (useful for creative/minigame servers)
+  pmmp: false
