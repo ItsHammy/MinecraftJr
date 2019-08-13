@@ -1,5 +1,5 @@
 # MinecraftJr
-  A Python Server Client for Bedrock Edition
+  A Python Server Client for Bedrock Edition | PLANNING TO RELEASE IN NOVEMBER uwu
 
 # About
   PM-MP is very limited and hard to work with, shit, there's not even default mob spawning without plugins.
