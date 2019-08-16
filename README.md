@@ -42,27 +42,27 @@
 
 ## Upcoming:
 
-  [ ] Multi-World Support
+  - [ ] Multi-World Support
 
-  [ ] Servermanagement GUI in game
+  - [ ] Servermanagement GUI in game
 
-  [x] YML support, sorry stuck with JSON for now :(
+  - [x] YML support, sorry stuck with JSON for now :(
 
-  [ ] Auto Updater
+  - [ ] Auto Updater
 
-  [ ] Built-in /login system for offline mode
+  - [ ] Built-in /login system for offline mode
 
-  [ ] So much more customisation (think EssentialsX but bedrock and built-in)
+  - [ ] So much more customisation (think EssentialsX but bedrock and built-in)
 
-  [ ] Discord Bot Support (Thanks to my friends in the Discord.py discord server for making this happen uwu)
+  - [ ] Discord Bot Support (Thanks to my friends in the Discord.py discord server for making this happen uwu)
 
-  [x] Completely change Python files so that setup etc is in a separate script
+  - [x] Completely change Python files so that setup etc is in a separate script
 
-  [ ] Windows Support
+  - [ ] Windows Support
 
-  [x] Behaviour Packs!
+  - [x] Behaviour Packs!
 
-  [ ] Support/Docs on my website (Look I'm putting this off for as long as possible)
+  - [ ] Support/Docs on my website (Look I'm putting this off for as long as possible)
 
 
 ### ONLY UBUNTU IS SUPPORTED | WINDOWS IS PLANNED
