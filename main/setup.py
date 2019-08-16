@@ -25,9 +25,11 @@ print("**                                  **")
 print("**           Lets Start!            **")
 print("**************************************")
 print("")
-print("NOTE: PLEASE DO NOT CHANGE VARIABLES FROM THE PYTHON FILE MANUALLY, PLEASE RUN 'FULLRESET' OR 'CHANGESETTING' COMMANDS FROM THE CONSOLE. CHANGING IN FILE MAY MAKE SOME ERRORS OCCUR IN GAME")
+print("There may be some delay as I change things around, please do not exit. | If you do, or I crash, read this: http://hammy.xyz/go/mcsetupcrash")
 print("")
 sleep(5)
+#Generate Files (FUN!)
+
 #Setup
 print("")
 print("First, an easy one, please enter your XboxLive username")
