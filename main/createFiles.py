@@ -1,0 +1,3 @@
+chat = open("chat.yml", "a")
+chat.write("#\n#  __  __  _____     _ _____     _____ _           _\n# |  \/  |/ ____|   | |  __ \   / ____| |         | |\n# | \  / | |        | | |__) | | |    | |__   __ _| |_\n# | |\/| | |    _   | |  _  /  | |    | '_ \ / _` | __|\n# | |  | | |___| |__| | | \ \  | |____| | | | (_| | |_\n# |_|  |_|\_____\____/|_|  \_\  \_____|_| |_|\__,_|\__|\n#\n# TO USE THIS, PLEASE MAKE SURE mcjr-chat IS SET TO true IN options.yml\n# TO USE THIS, PLEASE MAKE SURE mcjr-chat IS SET TO true IN options.yml\n# TO USE THIS, PLEASE MAKE SURE mcjr-chat IS SET TO true IN options.yml\n# TO USE THIS, PLEASE MAKE SURE mcjr-chat IS SET TO true IN options.yml\n\n#Placeholders: %player%, %unique%, %online%, %rank%\n\n#Messages")
+chat.close()
