@@ -1,5 +1,4 @@
-from minecraftjr import minecraftjr
-from time import sleep, time
+from minecraftjr import server
 
 def bootscript():
     print("Please wait")
@@ -8,4 +7,4 @@ def bootscript():
 bootscript()
 
 
-#YOU CAN CHANGE THIS SCRIPT! MAKE SURE TO HAVE from 'minecraftjr import minecraft' ON LINE 1 AND 'import server' AS YOUR BOOT LINE uwu
+#YOU CAN CHANGE THIS SCRIPT! MAKE SURE TO HAVE'from minecraftjr import server' ON LINE 1 AND 'import server' AS YOUR BOOT LINE uwu
