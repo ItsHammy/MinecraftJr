@@ -1,11 +1,11 @@
 #Import Everything
 from time import sleep, time
+import os.path
 
 # Testing Variables (There's a lot uwu)
 softwareVersion = '0.0.2'
 updateAvailable = 'false'
 updateVersion = '0.0.3'
-firstStart = 'false'
 gameVersion = '1.12.0'
 playersOnline = '34'
 playersMax = '150'
@@ -13,6 +13,13 @@ tps = '19.97'
 usePerms = 'true'
 
 # Working Variables
+
+# firstStart
+if os.path.exists('chat.yml'):
+    firstStart = 'false'
+else:
+    firstStart = "true"
+#Await CMD
 
 def awaitcmd():
     import main

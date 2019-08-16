@@ -5,7 +5,6 @@ from time import sleep, time
 softwareVersion = '0.0.2'
 updateAvailable = 'false'
 updateVersion = '0.0.3'
-firstStart = 'false'
 gameVersion = '1.12.0'
 playersOnline = '34'
 playersMax = '150'
