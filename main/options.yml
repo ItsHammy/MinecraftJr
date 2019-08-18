@@ -28,3 +28,9 @@ controlling:
   wlenforce: true
   # Set this to true to disable all Mob spawning (useful for creative/minigame servers)
   pmmp: false
+  #topadmin (Cannot be banned, kicked and has total control)
+  topadmin: 'TheDaddyHammy'
+
+# Other Settings (These can be reloaded safely)
+other:
+  motd: '&6A Cool Server!'

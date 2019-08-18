@@ -65,6 +65,14 @@ if port == '':
     port = '19132'
 else:
     print("Changing Server Port from 19132 to {}".format(port))
+print("Need a custom Portv6? (default is 19133)")
+print("Enter Server Portv6 (leave blank for default)")
+portv6 = input(">")
+#adjust serverport
+if portv6 == '':
+    portv6 = '19133'
+else:
+    print("Changing Server Portv6 from 19133 to {}".format(portv6))
 sleep(3)
 print("!!! The Fun y/n Section !!!")
 print("I ask you yes or no questions, you answer with y (yes) or n (no)")
@@ -96,6 +104,10 @@ nonxbl = input(">")
 sleep(1)
 print("Do you wish to use the default op system. (I REALLY suggest you answer n and let MinecraftJr handle the perms and not Minecraft)")
 legacyPerms = input(">")
+if legacyPerms =='y':
+    permy = 'false'
+else:
+    permy = 'true'
 sleep(1)
 print("Okay so now I believe we have world generation settings. One second as I reload the script")
 sleep(1)
@@ -112,7 +124,7 @@ sleep(1)
 print("Huh that easy? Okay then lets move on, next on this list is the fun stuff!!!")
 sleep(1)
 print("Let's bring her life!")
-print("Server 'Message of the Day'(MOTD)")
+print("ServerList 'Message of the Day'(MOTD)")
 print("We support colour codes/formatting codes using the & symbol! http://hammy.xyz/go/mcformatting")
 motd = input(">")
 print("")
@@ -121,6 +133,10 @@ print("Finally, do you want to have a custom 'server software' name?")
 print("Some server lists and status checkers display this, so i suggest something like 'Server.net v1.12' however use this however")
 print("Max 24 Characters, Leave blank for 'MinecraftJr'")
 serverSoftware = input(">")
+if serverSoftware == '':
+    serverSoftware = 'MCJR by hammy.xyz uwu'
+else:
+    print("Updated!")
 sleep(1)
 print("Okay we're done")
 print("Well you are")
@@ -130,8 +146,21 @@ print("")
 print("")
 print("Please wait (Time Remaining: ~55s)")
 sleep(25)
+# Let's Create server.properties!
+createProperties = open("server.properties", "a")
+createProperties.write("#Default Minecraft Bedrock Properties File, check out options.yml for more options :D\n#Pause menu Sidebar info | Not MOTD although some server lists may think so\nserver-name={}\ngamemode={}\ndifficulty=easy\n#MUST BE TRUE FOR MCJR TO WORK\nallow-cheats=true\nmax-players=150\n#MUST BE FALSE FOR MCJR TO WORK\nonline-mode=false\n#MUST BE FALSE FOR MCJR TO WORK\nwhite-list=false\nserver-port={}\nserver-portv6={}\nview-distance=10\ntick-distance=4\nplayer-idle-timeout=30\nmax-threads=8".format(serverName, gamemode, port, portv6))
+createProperties.close()
+print("[SUCCESS] Generated server.properties")
 print("Please wait (Time Remaining: ~30s)")
-sleep(30)
+# And now options.yml!!
+optionsCreate = open("options.yml", "a")
+optionsCreate.write("#\n#   ____        _   _                 _ _ _\n#  / __ \      | | (_)               | | | |\n# | |  | |_ __ | |_ _  ___  _ __  ___| | | |\n# | |  | | '_ \| __| |/ _ \| '_ \/ __| | | |\n# | |__| | |_) | |_| | (_) | | | \__ \_|_|_|\n#  \____/| .__/ \__|_|\___/|_| |_|___(_|_|_)\n#        | |\n#        |_|\n\n# Here are the various options for MinecraftJr\n\n# Important Settings (PLEASE RESTART WHEN YOU ADJUST THESE, NOT RELOAD)\ncontrolling:\n  # Do you wish to change the name of the server software? If so change it here | DO NOT LEAVE BLANK\n  sftwrename: '{}'\n  # Do you wish to use our permissions system? Some plugins require this and we recommend it, for more info see http://hammy.xyz/go/mcperms\n  mcjr-perms: {}\n  # Do you wish for OP's to get the '*' permission? Some plugins may not respect the OP system so we suggest keeping this true! [REQUIRES mcjr-perms to be true]\n  ops-get-all: true\n  # Do you wish for OP's to have /op? If false, only console can OP\n  opping-op-ops: false\n  # Do you wish to use the MCJR chat system? Please disable if you use your own Chat Manager. [chat.yml]\n  mcjr-chat: true  # Server Whitelist Message | %player% displays their name, colour codes currently not supported\n  whitelist-msg: 'Sorry %player%, This server is in maintenance mode! [hammy.xyz/minecraft]'\n  # Kick non-whitelisted players when whitelist is enabled (do this any time with /wlenforce)\n  wlenforce: true\n  # Set this to true to disable all Mob spawning (useful for creative/minigame servers)\n  pmmp: false\n  #topadmin (Cannot be banned, kicked and has total control)\n  topadmin: '{}'\n\n# Other Settings (These can be reloaded safely)\nother:\n  motd: '{}'".format(serverSoftware, permy, topadmin, motd))
+optionsCreate.close()
+
+sleep(28)
+
+print("Generated options.yml")
+sleep(2)
 print("***********************************")
 print("*      HELL YEAH IT WORKS!!!      *")
 print("***********************************")
