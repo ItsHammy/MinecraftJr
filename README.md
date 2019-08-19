@@ -7,9 +7,9 @@
   If you need help with the library, software or have any other questions, Join my discord here:
   http://hammy.xyz/discord
 
-  The docs are mostly in HTML form, please download them as a zip and navigate through, it's designed to be accessible offline uwu
+  The docs are in HTML form, please download them as a zip and navigate through, it's designed to be accessible offline uwu
 
-  See all the new features first on bedrock.teammage.org, the #1 Anarchy server for bedrock!
+  See all the new features first on bedrock.teammage.xyz, the #1 Anarchy server for bedrock!
 
 # Requirements:
   - Python 3.7.3 or above

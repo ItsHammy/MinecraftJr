@@ -30,7 +30,7 @@ def statusBox():
     print("**************************************************")
 
 def awaitcmd():
-    cmd = input(">".lower())
+    cmd = input("*********************\n Awaiting Command... \n>".lower())
     #answercmd
     if cmd == 'help':
         #help
