@@ -14,6 +14,8 @@
 controlling:
   # Do you wish to change the name of the server software? If so change it here | DO NOT LEAVE BLANK
   sftwrename: 'MinecraftJr by Hammy.xyz'
+  # IS THIS A CompleteBridge Server? (If Set to 'true', all other information is ignored and completebridge.yml will be called on)
+  complete-bridge: false
   # Do you wish to use our permissions system? Some plugins require this and we recommend it, for more info see http://hammy.xyz/go/mcperms
   mcjr-perms: true
   # Do you wish for OP's to get the '*' permission? Some plugins may not respect the OP system so we suggest keeping this true! [REQUIRES mcjr-perms to be true]
