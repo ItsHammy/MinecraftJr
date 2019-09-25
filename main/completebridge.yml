@@ -1,0 +1,16 @@
+
+
+# The following settings will only be called on if this is a CompleteBridge server!!!!!!!
+
+#What's the maximum amount of players you wish to allow to connect via the bridge (Note: The more players using bridge the more resources are required, 128 is MAX)
+max-bridged: 43
+
+#Asthetic Settings
+asthetic:
+  #What's the MOTD you wish to use in the server list?
+  motd: 'A CompleteBridge network Bridge!'
+  #This Message is shown when the Bridge collapses (Java Server Closes, MariaDB fails, Proxy disconnects)
+  bridge-collapsed-ohno: 'The Bridge Collapsed :( | Try rejoining soon'
+  #This Message is shown when the Bridge is down during connection attempts
+  bridge-missing: 'The Bridge to the java server is missing | Join our discord: https://discord.gg/bigforeheadsonly'
+  
