@@ -19,9 +19,9 @@ bot-setup:
 cosmetic-settings:
   #Playing Mode: http://hammy.xyz/mcdiscordhelp STREAMING NOT SUPPORTED
   playing-mode: 1
-  playing-message: Minecraft on bedrock.teammage.org | {playersOnline}/{playersMax}
+  playing-message: Minecraft on jr.hammy.xyz | {playersOnline}/{playersMax}
   #Chatting Channel Topic
-  default-channel-topic: bedrock.teammage.org | {playersOnline}/{playersMax}
+  default-channel-topic: jr.hammy.xyz | {playersOnline}/{playersMax}
   #console channel Topic
   log-channel-topic: TPS: {tps}
 
@@ -32,4 +32,3 @@ channels:
   default: 00000000000
   #Console Channel
   log: 00000000000
-  

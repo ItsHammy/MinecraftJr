@@ -2,9 +2,9 @@
 from time import sleep, time
 
 # Testing Variables (There's a lot uwu)
-softwareVersion = '0.0.2'
+softwareVersion = '0.0.3'
 updateAvailable = 'false'
-updateVersion = '0.0.3'
+updateVersion = '0.0.4'
 firstStart = 'false'
 gameVersion = '1.12.0'
 playersOnline = '34'
@@ -26,7 +26,7 @@ def startup():
     print("***  http://hammy.xyz/minecraft   ***")
     print("***      100% Open Source!        ***")
     print("*************************************")
-    print("***        Version: 0.0.2         ***")
+    print("***        Version: 0.0.3         ***")
     print("*************************************")
     print("")
     sleep(5)

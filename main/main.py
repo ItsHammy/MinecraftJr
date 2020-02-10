@@ -2,11 +2,11 @@
 from time import sleep, time
 
 # Testing Variables (There's a lot uwu)
-softwareVersion = '0.0.2'
+softwareVersion = '0.0.3'
 updateAvailable = 'false'
-updateVersion = '0.0.3'
+updateVersion = '0.0.4'
 firstStart = 'false'
-gameVersion = '1.12.0'
+gameVersion = '1.14.20'
 playersOnline = '34'
 playersMax = '150'
 tps = '19.97'
@@ -40,12 +40,14 @@ def awaitcmd():
         print("**                                           **")
         print("**   CMD     -          USAGE                **")
         print("**                                           **")
+        print("** crashnow   - Forcibly Crash the Server    **")
         print("** fullreset - RESET EVERYTHING (WARN)       **")
         print("** gc        - Server Information            **")
         print("** gm        - Change Gamemode               **")
         print("** help      - Shows this page               **")
         print("** op        - Give a player Operator Status **")
         print("** plugins   - List Server Plugins           **")
+        print("** saveall   - Save the game data            **")
         print("** stop      - Stops the server              **")
         print("** version   - Gives version Information     **")
         print("***********************************************")
@@ -54,6 +56,9 @@ def awaitcmd():
         print("Plugins (0): ")
         print("Plugin missing or not working? Check it's dependinces and that it's on the right version ({})".format(softwareVersion))
         awaitcmd()
+    elif cmd == 'saveall':
+        print("Saving Game State!")
+        awaitcmd()
     elif cmd == 'gc':
         statusBox()
         awaitcmd()
@@ -61,9 +66,13 @@ def awaitcmd():
         #Stop
         import stop
     elif cmd == 'version':
+        print("")
+        print("********************************************")
         print("Running Version {}".format(softwareVersion))
         print("Found a bug? Got an issue? Suggestion?")
         print("http://hammy.xyz/discord")
+        print("********************************************")
+        print("")
         awaitcmd()
     elif cmd == 'op':
         print("Please Enter XboxLive Username of New Operator")
@@ -72,6 +81,17 @@ def awaitcmd():
         print("[Server] Made {} a server Operator".format(newOp))
         print("Saved all changes!")
         awaitcmd()
+    elif cmd == 'crashnow':
+        print("Please type 'acceptcrash' to activate an immediate crash of the server.")
+        print("Crashing the server will result in all data since last save being lost.")
+        crashVerify = input(">")
+        if crashVerify == 'acceptcrash':
+            print("fine")
+            sleep(5)
+            exit()
+        else:
+            print("Verification Failed, Ignoring Request")
+            awaitcmd()
     elif cmd == 'fullreset':
         print("Please enter the command again to verify you want to do this")
         fresetVerify = input(">")

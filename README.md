@@ -2,7 +2,8 @@
 
   A Python Server Client for Bedrock Edition
 
-  I'm planning to release to public in November
+  ~~I'm planning to release to public in November~~
+  To be fair i never said which year
 
 
 ## About
@@ -16,7 +17,7 @@
 
 
 
-####  See all the new features first on bedrock.teammage.org, the #1 Anarchy server for bedrock!
+####  See all the new features first on jr.hammy.xyz, the #1 Anarchy server for bedrock!
 
 
 
